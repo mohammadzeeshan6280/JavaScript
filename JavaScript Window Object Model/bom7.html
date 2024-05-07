@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object Model</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>History Object Properties </h1>
+    <!-- <button onclick="backFunction()">Back</button> -->
+    <!-- <button onclick="forwardFunction()">Forward</button> -->
+    <button onclick="goFunction()">Go</button>
+     
+    <script> 
+    // History properties
+    console.log(history)
+    console.log(history.length)
+
+    // History Methods
+    
+    // function backFunction(){
+    //     history.back();
+
+    // }
+
+    // function forwardFunction(){
+    //     history.forward();
+
+    // }
+
+    function goFunction(){
+        history.go(2); // forward +
+        history.go(-2); // backword -
+    }
+
+
+    </script>
+
+</body>
+
+</html>

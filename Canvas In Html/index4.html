@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas in HTML</title>
+    <style>
+        canvas{
+            width: 300px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas">
+        
+    </canvas>
+
+    <script>
+        let can  = document.getElementById("myCanvas");
+        let ctx = can.getContext("2d");
+        ctx.font = "20px verdana"
+        // ctx.fillText("text",x,y)
+        ctx.fillStyle = "red"
+        ctx.fillText("MOHAMMAD ZEESHAN", 30, 90);
+
+        ctx.strokeStyle = "blue"
+        ctx.strokeText("MOHAMMAD ZEESHAN", 30, 90);
+        
+        
+      
+       
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object Model</title>
+    <style>
+        #myinput {
+            font-size: 21px;
+            padding: 10px;
+            width: 200px;
+
+        }
+
+        #box{
+            background: lightblue;
+            width: 400px;
+            height: 250px;
+            border: 1px solid red;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript : Clipboard Event Properties</h1>
+    <input type="text" name="" id="myinput">
+
+    <div id="box" oncopy = "copyFunction()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus labore ad consectetur quaerat ea, dolores ipsam praesentium dicta repudiandae quisquam expedita tempora modi voluptas quam provident a consequatur accusamus corporis distinctio dolore quas veritatis dignissimos nihil reiciendis. Tempora 
+    </div>
+    
+
+
+
+    <script>
+
+        let target = document.querySelector("#myinput");
+               target.addEventListener("copy", function(){
+            console.log("you copied text")
+            target.style.backgroundColor = "red"
+        })
+
+        target.addEventListener("cut", function(){
+            console.log("you cut text")
+            target.style.backgroundColor = "green"
+        })
+        target.addEventListener("paste", function(){
+            console.log("you paste text")
+            target.style.backgroundColor = "yellow"
+        })
+
+        let box = document.querySelector("#box");
+
+        // box.addEventListener('copy', function(){
+        //     box.style.backgroundColor = "purple"
+        // })
+
+        // box.addEventListener('cut', function(){
+        //     box.style.backgroundColor = "brown"
+        // })
+
+        function copyFunction() {
+            box.style.backgroundColor = "brown"
+        }
+       
+
+
+
+    </script>
+
+</body>
+
+</html>

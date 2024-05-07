@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator</title>
+</head>
+<body>
+    <h1>Rest Operator</h1>
+    <script>
+    //     function sum(){
+    //         console.log(arguments)
+
+    //         let sum = 0
+    //        for(let i in arguments){
+    //        sum += arguments[i]
+    //     }
+    // }
+
+    //     sum(10,20,30)
+    //     sum(20,30)
+
+    //     function sum(name, ...args){
+    //         console.log(arguments)
+
+    //         // console.log(`Hello ${name}`)
+    //         document.write(`Hello ${name} : `)
+
+    //         let sum = 0
+    //        for(let i in args){
+    //        sum += args[i]
+    //     }
+    //     // console.log(sum)
+    //     document.write(sum + "<br>")
+
+    // }
+    //     sum("MOHMMAD ZEESHAN",10,20,30)
+    //     sum("Sawai Madhopur",15,25,30)
+
+    
+
+        function sum(name,course, ...args){
+            console.log(arguments)
+
+
+// console.log(`Hello ${name}`)
+document.write(`Hello ${name} of ${course} : `)
+
+let sum = 0
+for(let i in args){
+sum += args[i]
+}
+// console.log(sum)
+document.write(sum + "<br>")
+
+}
+sum("MOHMMAD ZEESHAN", "BCA",10,20,30)
+sum("Sufiyan","BA",15,25,30)
+sum("Pooja","MA",15,55,15)
+
+    </script>
+</body>
+</html> 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div</title>
+    <style>
+        #outer{
+            width: 600px;
+            height: 350px;
+            background: khaki;
+            margin: 20px auto 0;
+        }
+
+        #inner{
+            width: 500px;
+            height: 200px;
+            background: pink;
+            margin: 0 auto;
+           
+        }
+        div{
+            width: 60px;
+            height: 50px;
+            background: white;
+            float: left;
+            border: 2px solid red;
+            margin: 5px;
+            padding-left: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <h2>Outer</h2>
+        <div id="inner">
+            <h2  id="child-head">Inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id="child-C">C</div>
+            <div>D</div>
+            <div id="child-E">E</div>
+        </div>
+    </div>
+
+    <!-- <script src="dom7.js">dom7</script> -->
+    <!-- <script src="dom8.js">dom8</script> -->
+    <!-- <script src="dom9.js">dom9</script> -->
+    <script src="dom10.js">dom10</script>
+    
+</body>
+</html>

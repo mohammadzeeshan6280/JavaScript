@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        #test {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <h1>setInterval & clearInterval</h1>
+    <div id="test"></div> -->
+
+
+    <h1>setTimeout & ClearTimeout</h1>
+    <div id="test"></div>
+    <button onclick="stopAnimation()">Stop Animation</button>
+
+    <script>
+        // setInterval & clearInterval
+        // let a = 0
+        // setInterval(Anim, 1000);
+
+        // function Anim(){
+        //     a = a + 10;
+        //     console.log(a)
+        // }
+
+
+        // let a = 0
+        // setInterval(Anim, 1000);
+
+        // function Anim(){
+        //     a = a + 10;
+        //     let target = document.getElementById("test");
+        //     target.style.marginLeft = a + 'px'
+        // }
+
+        // let a = 0
+        // let inter = setInterval(Anim, 1000);
+
+        // function Anim() {
+        //     a = a + 10;
+
+        //     if (a == 200) {
+        //         clearInterval(inter)
+        //     }
+        //     else {
+        //         let target = document.getElementById("test");
+        //         // target.style.marginLeft = a + 'px'
+        //         target.style.width = a + 'px'
+        //     }
+
+        // }
+
+        // setTimeout & ClearTimeout
+        // let set = setTimeout(Anim, 5000);
+
+        // function Anim(){
+        //     let target = document.getElementById("test");
+        //     target.style.width = "500px";
+        // }
+        // function stopAnimation(){
+        //     clearTimeout(set)
+        // }
+
+
+        let set = setTimeout(function () {
+                let target = document.getElementById("test");
+                target.style.width = "500px";
+            }, 5000);
+
+            function stopAnimation() {
+                clearTimeout(set)
+            }
+
+    </script>
+</body>
+
+</html>

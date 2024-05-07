@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object Model</title>
+    <style>
+
+    </style>
+</head>
+
+<body onresize="resizeFunction()">
+    <h1>Window Open & Close Methods</h1>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="closeWindow()">Close Window</button>
+    <script>
+        let myWindow;
+        // Open() Methods
+        function openWindow() {
+            // window.open("http://google.co.in")
+            // window.open("http://google.co.in", "google")
+            // window.open("http://google.co.in", "_blank")
+            // window.open("http://google.co.in", "_parent")
+            // window.open("http://google.co.in", "_self")
+            // window.open("http://google.co.in", "", "width=500px, height=300px")
+            myWindow = window.open("http://google.co.in", "", "width=500px, height=300px, left=200px, top=300px")
+        }
+
+        // Close() Methods
+        function closeWindow() {
+            myWindow.close()
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

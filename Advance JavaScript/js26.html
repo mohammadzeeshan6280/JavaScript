@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function</title>
+</head>
+<body>
+    <h2>Callback Function</h2>
+
+    <script>
+
+        function hey(){
+            console.log("hey...")
+        }
+
+        function hello(){
+            console.log("hello...")
+        }
+
+        function user(a ,b ,callback){
+          let c =  a + b;
+          console.log(c)
+          callback()
+        }
+        user(4,5,hey)
+        user(45,5,hello)
+
+        user(12,5, function(){
+            console.log("bye...")
+        })
+
+        let arr = [10,20,30,40]
+
+       let ary =  arr.map(function(value){
+            return value * 2
+        })
+        console.log(ary)
+
+
+    </script>
+</body>
+</html>

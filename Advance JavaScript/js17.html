@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Fucntion</title>
+</head>
+
+<body>
+    <script>
+        /*
+        function test(){
+            return "Hello";
+        }
+        console.log(test())
+        */
+
+        /*
+         let test = async function(){
+         return "Hello"
+        }
+        console.log(test())
+        test().then((result) =>{
+         console.log(result)
+        })
+        */
+
+        /*
+            let test = async () => "Hello"
+                test().then((result) =>{
+                    console.log(result)
+                } )
+        */
+
+        /*
+        async function test(){
+            console.log(" 2 : Message")
+            // console.log(" 3 : Message")
+           await console.log(" 3 : Message")
+            console.log(" 4 : Message")
+        }
+        console.log(" 1 : Message")
+        test();
+        console.log(" 5 : Message")
+        */
+
+        /*
+         async function test(){
+             console.log("2 : Message")
+             const response = await fetch("json/student_data.json")
+             console.log("3 : Message")
+             const students = await response.json()
+             
+             return students;
+         }
+         console.log("1 : Message")
+         let a = test()
+         console.log("4 : Message")
+         console.log(a)
+ 
+         test().then((result) =>{
+             console.log(result)
+         }).catch((error) =>{
+             console.log(error)
+         })
+         */
+
+        /*
+        async function test(){
+            const response = await fetch("json/student_data.json")
+            const students = await response.json()
+            return students;
+        }
+            test().then((result) =>{
+            console.log(result)
+        }).catch((error) =>{
+            console.log(error)
+        })
+        */
+
+        /*
+        async function test(){
+            return (await fetch("json/student_data.json")).json()
+        }
+            test().then((result) =>{
+            console.log(result)
+        }).catch((error) =>{
+            console.log(error)
+        })
+        */
+
+        async function test() {
+            try {
+                const response = await fetch("json/student_data.json")
+                const students = await response.json()
+                return students;
+            } catch (error) {
+                console.log(error)
+           }
+        }
+
+        test().then((res) => {
+            console.log(res)
+        });
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

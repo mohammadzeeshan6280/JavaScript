@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol</title>
+</head>
+<body>
+    <script>
+        // let a = Symbol()
+        // console.log(a);
+        // console.log(typeof a);
+
+        // let a = Symbol("Hello")
+        // let b = Symbol("Hello")
+        // console.log(a===b)
+
+        // let sym = Symbol()
+        // console.log(sym)
+        // console.log(typeof sym)
+
+        // let id1 = Symbol("Hello")
+        // let id2 = Symbol("Hello")
+        // console.log(id1 == id2)
+        
+        // let id = Symbol("Hello")
+        // console.log(id)
+        // alert(id.toString())
+        // alert(id.description)
+        // console.log(id.description)
+
+        // let age = Symbol()
+        // let user = {
+        //     name : "Ansari",
+        //     class : "Ba",
+        //     // [age] : 24
+        // }
+
+        // user[age] = 24;
+        // console.log(user)
+        // console.log(user.name)
+        // console.log(user.class)
+        // console.log(user[age])
+
+    //  let age = Symbol()
+    //     let user = {
+    //         name : "Ansari",
+    //         class : "MA"
+    //     }
+
+    //     user[age] = 21,
+    //     user["gender"] = "Male";
+    //     for(let key in user){
+    //         console.log(key)
+    //         console.log(user)
+    //     }
+
+     let age = Symbol("age")
+
+        let user = {
+            name : "Ansari",
+            class : "MA"
+        }
+
+        user[age] = 21,
+        user["gender"] = "Male";
+        
+        console.log(user)
+        console.log(JSON.stringify(user))
+
+
+
+        
+
+    </script>
+</body>
+</html>

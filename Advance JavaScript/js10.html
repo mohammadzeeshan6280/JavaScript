@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+</head>
+
+<body>
+    <h1>Object Oriented Programming</h1>
+    <script>
+        // class hello{
+        //     message(){
+        //         console.log("Hello Everyone")
+        //     }
+        //     sorry(){
+
+        //         console.log("Sorry Everyone")
+        //     }
+        //     }
+
+        //     let a = new hello()
+        //     a.message()
+        //     a.sorry()
+
+
+        // class student{
+        //     constructor(){
+        //         console.log("Constructor Fucntion")
+        //     }
+        // }
+        // let a = new student()
+        // let b = new student()
+        
+
+
+        // class student{
+        //     constructor(){
+        //         let name;
+        //         console.log("Constructor Fucntion")
+        //     }
+        //     hello(){
+        //         console.log("Hello " + this.name)
+        //     }
+        // }
+        // let a = new student()
+        // a.name = "MOHAMMAD ZEESHAN"
+        // a.hello()
+
+
+        // class student{
+        //     constructor(name,age){
+        //         this.studentname = name;
+        //         this.studentage = age;
+        //         console.log("Constructor Fucntion")
+        //     }
+        //     hello(){
+        //         console.log("Hello " + this.studentname +  " Your age is " + this.studentage)
+
+        //         // console.log(`Hello ${this.studentname} Your age is ${this.studentage}`)
+        //     }
+        // }
+        //  let a = new student("MOHAMMAD ZEESHAN", 24)
+        //  let b = new student("Whitehat", 22)
+        //  a.hello();
+        //  b.hello()
+
+
+        class student {
+            constructor(name, age) {
+                this.studentname = name;
+                this.studentage = age;
+                console.log("Constructor Fucntion")
+            }
+            hello() {
+                console.log("Hello " + this.studentname + " Your age is " + this.studentage)
+
+                // console.log(`Hello ${this.studentname} Your age is ${this.studentage}`)
+            }
+            static staticMethod() {
+                console.log("Static Fucntion")
+            }
+        }
+        let a = new student("MOHAMMAD ZEESHAN", 24)
+        let b = new student("WhiteHat", 22)
+        a.hello()
+        b.hello()
+        student.staticMethod(); //classname class
+
+
+    </script>
+</body>
+
+</html>

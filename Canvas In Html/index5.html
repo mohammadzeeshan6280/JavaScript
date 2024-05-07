@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas in HTML</title>
+    <style>
+        canvas{
+            width: 600px;
+            height: 400px;
+            border: 1px solid #000;
+        }
+
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas">
+        
+    </canvas>
+
+    <script>
+        let can  = document.getElementById("myCanvas");
+        let ctx = can.getContext("2d");
+
+    //     // Create gradient
+    //     // ctx.createLinearGradient(x1,y1,x2,y2)
+    //   let grad = ctx.createLinearGradient(0,0,200,200)
+    //   grad.addColorStop(0, "red")
+    //   grad.addColorStop(1, "yellow")
+
+    //       // Fill with gradient
+    //   ctx.fillStyle = grad;
+    //   ctx.fillRect(100,50,100,50)
+       
+        // Create gradient
+        // ctx.createLinearGradient(x1,y1,x2,y2)
+      let grad = ctx.createLinearGradient(200,100,200,200)
+      grad.addColorStop(0, "red")
+      grad.addColorStop(1, "yellow")
+
+          // Fill with gradient
+      ctx.strokeStyle = grad;
+      ctx.font = "20px arial"
+      ctx.fillText("mohammad zeeshan",50,100)
+    //   ctx.strokeRect(100,50,100,50)
+       
+        
+      
+       
+       
+    </script>
+</body>
+</html>

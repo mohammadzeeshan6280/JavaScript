@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literals</title>
+</head>
+<body>
+    <h1>Object Literals</h1>
+    <script>
+
+        // let name = "zeeshan";
+        // let course = "ba"
+
+        // let obj = {
+        //     // name : name,
+        //     // course : course,
+        //     name,
+        //     course,
+        // }
+        // console.log(obj)
+
+
+        // let n = "name";
+        // let obj = {
+        //     [n] : "zeeshan",
+        //     course : "MA",
+        // }
+        // console.log(obj)
+        // console.log(obj.name)
+
+        // let n = "student";
+        // let obj = {
+        //     [n + "name"] : "zeeshan",
+        //     course : "MA",
+        // }
+        // console.log(obj)
+
+        // let n = "student";
+        // let obj = {
+        //     [n + "name"] : "zeeshan",
+        //     course : "MA",
+        //     detail : function (){
+        //         return `${this.studentname} is student ${this.course}`
+        //     }
+        // }
+        // console.log(obj)
+        // console.log(obj.detail())
+
+
+        // let n = "student";
+        // let obj = {
+        //     [n + "name"] : "zeeshan",
+        //     course : "MA",
+        //     // detail(){
+        //     'detail show'(){
+        //         return `${this.studentname} is student ${this.course}`
+        //     }
+        // }
+        // console.log(obj)
+        // // console.log(obj.detail())
+        // // console.log(obj['detail']())
+        // console.log(obj['detail show']())
+
+
+        let fname = "zeeshan"
+        let lname = "ansari"
+        let course = "HTML"
+
+        function student(fname, lname){
+            // let fullName = fname + " " + lname;
+            let fullName = `${fname} ${lname}`;
+            return {fullName,course}
+        }
+        console.log(student(fname, lname, course))
+
+        let s = student(fname, lname, course)
+        console.log(s.fullName)
+        console.log(s.course)
+
+
+
+      
+
+    </script>
+</body>
+</html>

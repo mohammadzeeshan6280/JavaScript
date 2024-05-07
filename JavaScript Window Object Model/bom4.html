@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object Model</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Window Open & Close Methods</h1>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="resizeWindow()">Resize Window</button>
+
+    <script>
+        let myWindow;
+        // ResizeTo() Methods
+        function openWindow() {
+            myWindow = window.open("", "", "width=200px, height=200px,left=20px,top=30px")
+            myWindow.document.write("<p>This is para</p>")
+        }
+
+        // function resizeWindow() {
+        //     myWindow.resizeTo(400,400)
+        // }
+
+        // ResizeBy() Methods
+        function resizeWindow() {
+            myWindow.resizeBy(150,150)
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Iterators</title>
+</head>
+<body>
+    <h1>JavaScript : Iterators</h1>
+
+    <script>
+
+        // let num = [100,200,300];
+        // console.log(num);
+        // console.log(typeof num[Symbol.iterator]);
+        
+        
+        // let num = [100,200,300];
+        // let iter = num[Symbol.iterator]();
+        // // console.log(iter);
+        // console.log(iter.next());
+        // console.log(iter.next());
+        // console.log(iter.next());
+        // console.log(iter.next());
+
+        // let num = [100,200,300];
+        // let iter = num[Symbol.iterator]();
+        // (iter.next());
+        // (iter.next());
+        // console.log(iter.next());
+
+        // let num = [100,200,300];
+        // let iter = num[Symbol.iterator]();
+        // (iter.next());
+        // (iter.next());
+        // console.log('Hello')
+        // console.log('Hello')
+        // console.log('Hello')
+        // console.log(iter.next());
+
+        // let num = [100,200,300];
+        // let iter = num[Symbol.iterator]();
+        // // (iter.next());
+        // (iter.next());
+        // console.log(iter.next().value);
+        // console.log(iter.next().done);
+
+        // let num = [100,200,300,400,500];
+        // let iter = num[Symbol.iterator]();
+        // let result = iter.next();
+
+        // while (!result.done) {
+        //     console.log(result.value);
+        //     result = iter.next();
+        // }
+
+        // let str = "White Hat";
+        // let iter = str[Symbol.iterator]();
+        // let result = iter.next();
+
+        // while (!result.done) {
+        //     console.log(result.value);
+        //     result = iter.next();
+        // }
+
+        // let str = "White Hat";
+        // for (let char of str){
+        //     console.log(char);
+        // }
+
+
+
+        // function numberIterator(arr){
+        //     let nextNum = 0;
+        //     return {
+        //         next(){
+        //             return{
+        //                 value : arr[nextNum++],
+        //                 done : false
+        //             }
+        //         }
+        //     }
+
+        // }
+        // let numbers = [100,200,300];
+        // let num = numberIterator(numbers);
+        // console.log(num.next());
+        // console.log(num.next());
+        // console.log(num.next());
+        // console.log(num.next());
+
+
+        // function numberIterator(arr){
+        //     let nextNum = 0;
+        //     return {
+        //         next(){
+        //             if(nextNum < arr.length){
+        //                 return{
+        //                     value : arr[nextNum++],
+        //                     done : false
+        //                 }
+
+        //             } else{
+        //                 return{
+        //                 done : true
+        //             }
+
+        //             }
+        //         }
+        //     }
+        // }
+
+        // let numbers = [100,200,300,400,500];
+
+        // let num = numberIterator(numbers);
+        // console.log(num.next());
+        // (num.next());
+        // console.log(num.next());
+        // console.log(num.next());
+        // console.log(num.next());
+        // console.log(num.next());
+        // console.log(num.next());
+
+
+        function numberIterator(arr){
+            let nextNum = 0;
+            return {
+                next(){
+                    if(nextNum < arr.length){
+                        return{
+                            value : arr[nextNum++],
+                            done : false
+                        }
+
+                    } else{
+                        return{
+                        done : true
+                    }
+
+                    }
+                }
+            }
+        }
+
+        let numbers = [100,200,300,400,500];
+
+        let num = numberIterator(numbers);
+        console.log(num.next().value);
+        (num.next());
+        console.log(num.next().value);
+        console.log(num.next().value);
+        console.log(num.next().value);
+    
+       
+     
+       
+
+
+
+
+
+    </script>
+</body>
+</html>

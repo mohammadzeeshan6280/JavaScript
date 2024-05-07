@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object Model</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 400px;
+            border: 1px solid green;
+            background: pink;
+        }
+     
+
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript : pageX & pageY</h1>
+    <div id="box"></div>
+
+     
+    <script> 
+//    document.addEventListener('mousemove', function(e){
+//     console.clear();
+
+document.querySelector("#box").addEventListener('click', function(e){
+
+        console.clear();
+
+    let x = e.screenX;
+    let y = e.screenY;
+
+    let x2 = e.clientX;
+    let y2 = e.clientY;
+    
+    console.log("screenX : " + x)
+    console.log("clientX : " + x2)
+
+    console.log("screenY : " + y)
+    console.log("clientY : " + y2)
+ 
+
+   })
+
+
+
+    </script>
+
+</body>
+
+</html>

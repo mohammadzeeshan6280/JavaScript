@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Generators</title>
+</head>
+
+<body>
+    <h1>JavaScript : Generators</h1>
+
+    <script>
+        // function generateit() {
+        //     console.log("First Message");
+        //     console.log("Second Message");
+        // }
+        // generateit();
+
+        //     function *generateit() {
+        //         console.log("First Message");
+        //         console.log("Second Message");
+        //     }
+
+        //    let g =  generateit();
+        // //    console.log(g)
+        //    console.log(g.next())
+
+        //     function *generateit() {
+        //         console.log("First Message");
+        //         console.log("Second Message");
+        //     }
+
+        //    let g =  generateit();
+        // //    console.log(g)
+        //    console.log(g.next())
+
+        //     function *generateit() {
+        //         console.log("First Message");
+        //         yield 'Yield No. 1';
+        //         console.log("Second Message");
+        //         yield 'Yield No. 2';
+        //     }
+
+        //    let g =  generateit();
+        //    console.log(g.next())
+        //    console.log(g.next())
+        //    console.log(g.next())
+
+        //     function *generateit() {
+        //     //    yield;
+        //        yield 'First';
+        //     }
+
+        //    let g =  generateit();
+        //    console.log(g.next())
+
+
+        //     function *generateit() {
+        //     yield 'Yield No.1';
+        //     yield 'Yield No.2';
+        //     yield 'Yield No.3';
+        //     }
+
+        //    let g =  generateit();
+        // //    console.log(g.next())
+        //    console.log(g.next().value)
+        //    g.next();
+        // //    console.log(g.next())
+        //    console.log(g.next().value)
+
+        //     function *generateit() {
+        //     yield 'Yield No.1';
+        //     yield 'Yield No.2';
+        //     yield 'Yield No.3';
+        //     }
+
+        //    let g =  generateit();
+        //    for(let value of g){
+        //     console.log(value)
+        //    }
+
+        //     function *generateit() {
+        //     let nextNum = 300;
+        //     while (true) {
+        //         yield(nextNum++);
+        //     }
+        //     }
+
+        //    let g =  generateit();
+        //    console.log(g.next().value)
+        //    console.log(g.next().value)
+        //    console.log(g.next().value)
+
+        //     function *generateit() {
+        //     let nextNum = 300;
+        //     while (true) {
+        //         yield(nextNum++);
+        //     }
+        //     }
+
+        //    let g =  generateit();
+        // for(let value of g){
+        //     if(value > 305) break;
+        //     console.log(value)
+        // }
+
+        //     function *generateit() {
+        // //    let result = yield;
+        //    let result = (yield) * 10;
+        //    console.log(`Result : ${result}`);
+        //     }
+
+        //    let g =  generateit();
+        //     g.next();
+        //     g.next(500);
+
+
+        //     function *generateit() {
+        // //    let result = yield;
+        //    let rArray = [yield, yield,yield];
+        // //    console.log(`Result : ${rArray}`);
+        //    console.log(`Result : ${rArray[2]}`);
+        //     }
+
+        //    let g =  generateit();
+        //     g.next();
+        //     g.next(500);
+        //     g.next(600);
+        //     g.next(700);
+        //     g.next(800);
+
+        //     function *generateit() {
+        // //    let result = yield;
+        //    let rArray = [yield, yield,yield];
+        // //    console.log(`Result : ${rArray}`);
+        //    console.log(`Result : ${rArray[2]}`);
+        //     }
+
+        //    let g =  generateit();
+        //     g.next();
+        //     g.next("PHP");
+        //     g.next("HTML");
+        //     g.next("CSS");
+        //     g.next("JAVA");
+
+        // function *generateit() {
+        //     yield 55;
+        //     // yield ['Node', 'Angular', 'React']
+        //     yield* ['Node', 'Angular', 'React']
+        // }
+
+        // let g = generateit();
+        // // console.log(g.next())
+        // // console.log(g.next())
+        // // console.log(g.next())
+        // // console.log(g.next())
+        // // console.log(g.next())
+        // console.log(g.next().value)
+        // console.log(g.next().value)
+        // console.log(g.next().value)
+        // console.log(g.next().value)
+        // console.log(g.next().value)
+
+
+    //     function *generateit() {
+    //         yield 'PHP';
+    //         yield 'Node';
+    //         yield 'Angular';
+    //         yield 'React';
+    //     }
+
+    //     let g = generateit();
+    
+    //     console.log(g.next().value)
+    //    console.log([...g]);
+
+        function *generateit() {
+            yield 'PHP';
+            yield 'Node';
+            yield 'Angular';
+            yield 'React';
+        }
+
+        let g = generateit();
+    
+        console.log(g.next().value)
+        // console.log(g.return())
+        console.log(g.return('Ending Now'))
+        console.log(g.next().value)
+    </script>
+</body>
+
+</html>

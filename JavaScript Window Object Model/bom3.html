@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object Model</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Window Open & Close Methods</h1>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="moveWindow()">Move Window</button>
+    
+    <script>
+        let myWindow;
+        // MoveBy() Methods
+        function openWindow() {
+        //  myWindow = window.open("http://google.co.in", "", "width=500px, height=300px")
+
+
+         myWindow = window.open("", "", "width=500px, height=300px, left=100px, top=100px")
+        myWindow.document.write("<p>This is para</p>")
+        }
+
+        // function moveWindow(){
+        //     myWindow.moveTo(200,200)
+        //     myWindow.focus();
+        // }
+
+        function moveWindow(){
+            myWindow.moveBy(250,250)
+            myWindow.focus();
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object Model</title>
+    <style>
+        /* #box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid green;
+            background: pink;
+            margin: 20px;
+        } */
+     
+
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript : key Properties</h1>
+    <div id="box"></div>
+    <input type="text" id="mytextbox">
+ 
+     
+    <script> 
+//     let target = document.querySelector("#box");
+//    target.addEventListener('click', function(e){
+
+    let target = document.querySelector("#mytextbox");
+   target.addEventListener('keydown', function(e){
+
+//     let ctrl = e.ctrlKey; // ctrl key ke sath press karne per true aata hai
+//   console.log(ctrl)
+
+// let ctrl = e.ctrlKey;
+// if(ctrl){
+//    console.log("you pressed control key. ")
+// }
+// else(
+//     console.log("you not pressed control key. ")
+// )
+
+// let shift = e.shiftKey;
+// if(shift){
+//    console.log("you pressed shift key. ")
+// }
+// else(
+//     console.log("you not pressed shift key. ")
+// )
+
+// let meta = e.metaKey;
+// if(meta){
+//    console.log("you pressed meta key. ")
+// }
+// else(
+//     console.log("you not pressed meta key. ")
+// )
+
+// let alt = e.altKey;
+// if(alt){
+//    console.log("you pressed alt key. ")
+// }
+// else(
+//     console.log("you not pressed alt key. ")
+// )
+
+let k;
+switch (true) {
+    case e.metaKey:
+        k = "Meta Key"
+        break;
+    case e.altKey:
+        k = "alt Key"
+        break;
+    case e.shiftKey:
+        k = "shift Key"
+        break;
+    case e.ctrlKey:
+        k = "ctrl Key"
+        break;
+
+    default:
+       k = "no key pressed"
+        break;
+}
+console.log(k)
+ 
+
+   })
+
+
+    </script>
+
+</body>
+
+</html>

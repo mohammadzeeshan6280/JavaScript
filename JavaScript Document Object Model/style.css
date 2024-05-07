@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: yellow;
+}
+
+#wrapper {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    background: grey;
+}
+
+#header {
+    background: maroon;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* .abc{
+    background: brown;
+}
+
+.xyz{
+    background: yellow;
+} */
+
+
+#menu {
+    background: rgb(91, 91, 231);
+}
+
+
+
+#menu ul {
+    display: flex;
+}
+
+#menu ul li {
+    list-style: none;
+    /* border: 2px solid red; */
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+#menu ul li a:hover {
+    background: rgb(29, 158, 197);
+}
+
+#content{
+    width: 800px;
+    min-height: 450px;
+    background: pink;
+    float: left;
+}
+
+#content h2{
+    font-size: 35px;
+    padding: 10px;
+}
+
+#content img{
+    width: 200px;
+  float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#content p{
+    padding-left: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#sidebar{
+    width: 200px;
+    min-height: 450px;
+   background: khaki;
+   float: left;
+}
+#sidebar ul{
+    list-style: none;
+}
+
+#sidebar ul li{
+    text-align: center;
+    
+}
+
+#sidebar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 8px 0;
+    color: black;
+
+}
+#list{
+    margin-left: 10px;
+}
+
+#list li{
+    list-style: none;
+    font-size: 17px;
+}
+
+#footer{
+    background: red;
+    padding: 5px;
+    text-align: right;
+    font-size: 20px;
+    color: white;
+}
+
